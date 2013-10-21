@@ -28,4 +28,6 @@ MF
 <preference name="orientation" value="portrait" />
 <preference name="FadeSplashScreen" value="true" />
 <preference name="FadeSplashScreenDuration" value="2" />
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </widget>
