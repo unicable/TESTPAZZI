@@ -22,17 +22,17 @@
     access elements control the Android whitelist.
     Domains are assumed blocked unless set otherwise
      -->
+
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
+
     <access origin="http://mfunes.com.ar" subdomains="true"/>
+    
     <!-- <access origin="https://example.com" subdomains="true" /> such as above, but including subdomains, such as www -->
     <access origin=".*"/>
-	
-    <feature name="http://api.phonegap.com/1.0/file"/> 
-	
+
     <log level="DEBUG"/>
     <preference name="useBrowserHistory" value="true" />
     <preference name="exit-on-suspend" value="false" />
-	<preference name="phonegap-version" value="1.7.0" />
 	<plugins>
 	    <plugin name="App47" value="com.app47.pgplugin.App47PGPlugin" />
 	    <plugin name="App" value="org.apache.cordova.App"/>
