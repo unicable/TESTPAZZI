@@ -9,7 +9,7 @@
 <author href="http://www.mfunes.com.ar" email="info@mfunes.com.ar">
 MF
 </author>
-<description>TestMF - Version 0.1</description>
+<description>CAM Publicator</description>
 <icon src="icon.png" />
 <icon src="res/img/logo.png" gap:platform="android" gap:density="ldpi" />
 <icon src="res/img/logo.png" gap:platform="android" gap:density="mdpi" />

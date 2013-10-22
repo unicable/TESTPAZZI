@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Capture Photo</title>
+    <title>CAM Publicator</title>
 
     <script type="text/javascript" charset="utf-8" src="js/cordova-2.7.0.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -64,8 +64,18 @@
     //
     function capturePhoto() {
       // Take picture using device camera and retrieve image as base64-encoded string
-      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
-        destinationType: destinationType.DATA_URL });
+		navigator.camera.getPicture(
+			onPhotoDataSuccess, 
+			onFail, 
+			{ 
+				quality: 50,
+				destinationType: destinationType.DATA_URL,
+				sourceType : Camera.PictureSourceType.CAMERA,
+				encodingType: Camera.EncodingType.JPEG,
+				targetWidth: 100,
+				targetHeight: 100
+			}
+		);
     }
 
     // A button will call this function
